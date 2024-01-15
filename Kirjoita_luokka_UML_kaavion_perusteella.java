@@ -1,5 +1,3 @@
-//KOODI EI TOIMI OIKEIN VSCODESSA
-
 /*
 Kirjoita alla olevan UML-kaavion mukainen luokka.
 
