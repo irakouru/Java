@@ -1,5 +1,3 @@
-//KOODI EI TOIMI VSCODESSA
-
 /*
 Kirjoita metodi
 
@@ -31,16 +29,18 @@ import java.util.Scanner;
 public class Puhelinluettelo {
     public static void main(String[] args){
         final Random r = new Random();
+        
+        HashMap<String,String> nrot = new HashMap<>();
             
-            lisaaNumero(nrot);
-            System.out.println("Luettelo nyt:");
+        lisaaNumero(nrot);
+        System.out.println("Luettelo nyt:");
             
-            ArrayList<String> nimet = new ArrayList<>(nrot.keySet());
-            Collections.sort(nimet);
-            for (String nimi : nimet) {
-                System.out.println(nimi + ": " + nrot.get(nimi));
-            }
+        ArrayList<String> nimet = new ArrayList<>(nrot.keySet());
+        Collections.sort(nimet);
+        for (String nimi : nimet) {
+            System.out.println(nimi + ": " + nrot.get(nimi));
         }
+    }
     
     public static void lisaaNumero (HashMap<String, String> numero) {
         Scanner lukija = new Scanner(System.in);
